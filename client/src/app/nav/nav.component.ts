@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
 import { AccountService } from '../_services/account.service';
 
 @Component({
@@ -27,5 +26,4 @@ export class NavComponent implements OnInit {
     this.accountService.logout();
     this.router.navigateByUrl('/')
   }
-
 }
